@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Contact Me - Fill the form and then submit
+    </title>
+
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <h1><a href="index.html" target="_self">gallery</a></h1>
+        </div>
+        <div class="menu">
+            <a href="index.html">home</a>
+            <a href="about.html">about</a>
+            <a href="contact.html">contact</a>
+        </div>
+        <button onclick="show()"><i class="fa fa-bars"></i></button>
+
+        <div class="sidemenu" id="sidemenu">
+            <a href="index.html">home</a>
+            <a href="about.html">about</a>
+            <a href="contact.html">contact</a>
+        </div>
+    </header>
+
+
+    <div class="contact" id="contact">
+        <h2 class="res"><i class="fa-regular fa-envelope"></i> contact <span>me</span></h2>
+
+        <form name="galleryform" method="POST" data-netlify="true"  onSubmit="submit"  data-netlify-honeypot="bot-field">
+            <input type="text" name="bot-field" style="display: none;" >
+            <div class="input-group1">
+                <div class="input-box">
+                    <input type="text" required name="name" autocomplete="off" autofocus>
+                    <label for="">your name</label>
+                </div>
+                <div class="input-box">
+                    <input type="email" required name="email id" autocomplete="off">
+                    <label for="">email id</label>
+                </div>
+                <div class="input-box">
+                    <input type="number" required name="mobile number" autocomplete="off">
+                    <label for="">phone no.</label>
+                </div>
+                <div class="input-box">
+                    <input type="text" required name="context" autocomplete="off">
+                    <label for="">subject</label>
+                </div>
+
+            </div>
+            <div class="input-group2">
+                <div class="input-box">
+                    <textarea id="msg" rows="8" required name="actual message"></textarea>
+                    <label for="">your message</label>
+                    <button type="submit">submit</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+
+    <footer>
+        <h2>copyright <i class="fa-regular fa-copyright"></i> | all rights reserved </h2>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,96 @@
+/* ----------------------------------------------navbar css------------------------------------------ */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: none;
+}
+
+body{
+    background-color: black;
+}
+html{
+    font-size: 62.5%;
+}
+header{
+    min-width: 100%;
+    min-height: 5vh;
+    padding: 1rem 5%;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 200;
+    background-color: rgba(0,0,0,.8);
+    backdrop-filter: blur(20px);
+
+}
+
+header .logo h1 a{
+    text-transform: uppercase;
+    font-size: 3rem;
+    color: rgba(0, 255, 0, 0.918);
+    letter-spacing: 2px;
+    font-family: "Play", sans-serif;
+}
+
+header .menu a{
+    text-transform: capitalize;
+    color: rgba(0, 255, 0, 0.918);
+    font-size: 2em;
+    font-weight: 700;
+    font-family: "Play", sans-serif;
+    margin: 0 1em;
+    transition: .2s ease;
+    border-bottom: 2px solid transparent;
+    letter-spacing: 2px;
+}
+
+header .menu a:hover{
+    border-bottom: 2px solid white;
+    color: white;
+    text-shadow: 0 0 2px white;
+}
+
+header button{
+    display: none;
+    background-color: transparent;
+    color: rgba(0, 255, 0, 0.918);
+    border: none;
+    font-size: 2em;
+}
+
+
+/* ----------------------------------------------side menu-------------------------------------------------- */
+
+.sidemenu{
+    width: 100%;
+    height: 100vh;
+    padding: 2em;
+    position: fixed;
+    top: 4.8rem;
+    left: -100%;
+    z-index: 100;
+    text-align: center;
+    backdrop-filter: blur(20px);
+    transition: .3s ease;
+    background:linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7));
+}
+
+.sidemenu.active{
+    left:0;
+}
+
+.sidemenu a{
+    color: rgba(0, 255, 0, 0.918);
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    font-size: 2.5em;
+    margin: 2em auto;
+    display: block;
+    font-weight: 600;
+    font-family: "Play", sans-serif;
+}

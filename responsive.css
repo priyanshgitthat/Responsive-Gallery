@@ -1,0 +1,65 @@
+
+@media screen and (max-width: 800px){
+    form{
+        flex-direction: column;
+        gap: 0;
+    }
+    form .input-box{
+        margin-bottom: 45px;
+    }
+
+    form .input-box label{
+        font-size: 1.3rem;
+        width: auto;
+    }
+    form .input-box input,textarea{
+        width: 60vw;
+    }
+    .contact h2{
+        font-size: 2rem;
+    }
+} 
+
+
+
+
+@media screen  and (max-width:560px){
+    header .logo h1 a{
+        font-size: 2.5rem;
+    }
+    header button{
+        display: block;
+    }
+    header .menu{
+        display: none;
+    }
+    section a{
+        font-size: 1.8em;
+    }
+    footer h2{
+        font-size: 1em;
+    }
+    section a{
+        font-size: 1.2em;
+    }
+}
+
+
+@media screen and (max-width:438px) {
+    .wrapper{
+        grid-template-columns: repeat(auto-fit,minmax(60%,1fr));
+        gap: .5rem;
+        padding: .5rem;
+    }   
+}
+
+@media screen and (max-width:338px) {
+    .wrapper{
+        gap: .2rem;
+        padding: .2rem;
+    }
+
+    footer h2{
+        font-size: 10px;
+    }
+}   

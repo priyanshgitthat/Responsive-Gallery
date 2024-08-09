@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>responsive gallery</title>
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="gallery.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <h1><a href="index.html" target="_self">gallery</a></h1>
+        </div>
+        <div class="menu">
+            <a href="index.html">home</a>
+            <a href="about.html">about</a>
+            <a href="contact.html">contact</a>
+        </div>
+        <button onclick="show()"><i class="fa fa-bars"></i></button>
+
+        <div class="sidemenu" id="sidemenu">
+            <a href="index.html">home</a>
+            <a href="about.html">about</a>
+            <a href="contact.html">contact</a>
+        </div>
+    </header>
+
+    <div class="heading">
+        <h1>responsive <span>image gallery</span></h1>
+    </div>
+
+    <div>
+        <div class="full-img" id="fullimgbox">
+            <img src="images/gallery images/02 (645).jpg" alt="" id="fullimg">
+            <span onclick="closepic()"> <i class="fa fa-x"></i></span>
+        </div>
+    </div>
+
+
+    <div class="wrapper">
+
+        <div class="box">
+            <img src="images/gallery images/02 (645).jpg" alt="" onclick="openpic(this.src)">
+            <!-- <h2>mad max</h2> -->
+        </div>
+
+        <div class="box">
+            <img src="images/gallery images/19 (429).jpg" alt="" onclick="openpic(this.src)">
+            <!-- <h2>gone girl</h2> -->
+        </div>
+
+        <div class="box">
+            <img src="images/gallery images/19 (670).jpg" alt="" onclick="openpic(this.src)">
+            <!-- <h2>man of steel</h2> -->
+        </div>
+
+        <div class="box row-span">
+            <img src="images/gallery images/23 (157).jpg" alt="" onclick="openpic(this.src)">
+            <!-- <h2>blade</h2> -->
+        </div>
+
+        <div class="box">
+            <img src="images/gallery images/30 (643).jpg" alt="" onclick="openpic(this.src)">
+            <!-- <h2>lord of the ring</h2> -->
+        </div>
+        <div class="box">
+            <img src="images/gallery images/33 (504).jpg" alt="" onclick="openpic(this.src)">
+            <!-- <h2>some random text</h2> -->
+        </div>
+        <div class="box">
+            <img src="images/gallery images/37 (457).jpg" alt="" onclick="openpic(this.src)">
+            <!-- <h2>hell boy</h2> -->
+        </div>
+        <div class="box">
+            <img src="images/gallery images/45 (212).jpg" alt="" onclick="openpic(this.src)">
+            <!-- <h2>captain america winter soldier</h2> -->
+        </div>
+        <div class="box">
+            <img src="images/gallery images/58 (487).jpg" alt="" onclick="openpic(this.src)">
+            <!-- <h2>jeniffers's body</h2> -->
+        </div>
+        <div class="box">
+            <img src="images/gallery images/amazing-spider-man2(2014)_4169.jpg" alt="" onclick="openpic(this.src)">
+            <!-- <h2>amazing spiderman</h2> -->
+        </div>
+        <div class="box">
+            <img src="images/gallery images/aquaman(2018)_1300.jpg" alt="" onclick="openpic(this.src)">
+            <!-- <h2>aquaman</h2> -->
+        </div>
+        <div class="box">
+            <img src="images/gallery images/Godzilla_KOM_023.jpg" alt="" onclick="openpic(this.src)">
+            <!-- <h2>godzilla</h2> -->
+        </div>
+        <div class="box">
+            <img src="images/gallery images/Captain_Marvel_062.jpg" alt="" onclick="openpic(this.src)">
+            <!-- <h2>captain marvel</h2> -->
+        </div>
+        <div class="box">
+            <img src="images/gallery images/DF-06633r-jpg_201342.webp" alt="" onclick="openpic(this.src)">
+            <!-- <h2>campaign</h2> -->
+        </div>
+        <div class="box">
+            <img src="images/gallery images/drstrange007.jpg" alt="" onclick="openpic(this.src)">
+            <!-- <h2>doctor strange</h2> -->
+        </div>
+        <div class="box">
+            <img src="images/gallery images/Edge_of_Tomorrow_013.jpg" alt="" onclick="openpic(this.src)">
+            <!-- <h2>edge of tomorrow</h2> -->
+        </div>
+        <div class="box">
+            <img src="images/gallery images/Evil_Dead_Rise_36.jpg" alt="" onclick="openpic(this.src)">
+            <!-- <h2>evil dead</h2> -->
+        </div>
+        <div class="box">
+            <img src="images/gallery images/guardiansofthegalaxy_1497.jpg" alt="" onclick=" openpic(this.src)">
+            <!-- <h2>guardian of the galaxy</h2> -->
+        </div>
+        <div class="box">
+            <img src="images/gallery images/images (10).jpeg" alt="" onclick="openpic(this.src)">
+            <!-- <h2>dr. do little</h2> -->
+        </div>
+        <div class="box">
+            <img src="images/gallery images/images (2).jpeg" alt="" onclick="openpic(this.src)">
+            <!-- <h2>the loan rangers</h2> -->
+        </div>
+        <div class="box">
+            <img src="images/gallery images/images (4).jpeg" alt="" onclick="openpic(this.src)">
+            <!-- <h2>underworld awakening 2</h2> -->
+        </div>
+        <div class="box">
+            <img src="images/gallery images/images (5).jpeg" alt="" onclick="openpic(this.src)">
+            <!-- <h2>underworld awakening 2</h2> -->
+        </div>
+        <div class="box">
+            <img src="images/gallery images/images (6).jpeg" alt="" onclick="openpic(this.src)">
+            <!-- <h2>ghost rider</h2> -->
+        </div>
+
+        <div class="box">
+            <img src="images/gallery images/images (7).jpeg" alt="" onclick="openpic(this.src)">
+            <!-- <h2>world war z</h2> -->
+        </div>
+
+        <div class="box">
+            <img src="images/gallery images/images (9).jpeg" alt="" onclick="openpic(this.src)">
+            <!-- <h2>sherloch holmes</h2> -->
+        </div>
+
+        <div class="box">
+            <img src="images/gallery images/Life_of_Pi_040.jpg" alt="" onclick="openpic(this.src)">
+            <!-- <h2>life of a pie</h2> -->
+        </div>
+
+        <div class="box">
+            <img src="images/gallery images/Pain__Gain_39.jpg" alt="" onclick="openpic(this.src)">
+            <!-- <h2>pain and gain</h2> -->
+        </div>
+
+        <div class="box">
+            <img src="images/gallery images/Resident_Evil_Afterlife_020.jpg" alt="" onclick="openpic(this.src)">
+            <!-- <h2>resident evil</h2> -->
+        </div>
+
+        <div class="box">
+            <img src="images/gallery images/themartian003.jpg" alt="" onclick="openpic(this.src)">
+            <!-- <h2>the martian</h2> -->
+        </div>
+
+        <div class="box">
+            <img src="images/gallery images/startrek037.jpg" alt="" onclick="openpic(this.src)">
+            <!-- <h2>star trek</h2> -->
+        </div>
+
+        <div class="box">
+            <img src="images/gallery images/thematrixreloaded044.jpg" alt="" onclick="openpic(this.src)">
+            <!-- <h2>the matrix</h2> -->
+        </div>
+    </div>
+
+    <footer>
+        <h2>copyright <i class="fa-regular fa-copyright"></i> | all rights reserved </h2>
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
